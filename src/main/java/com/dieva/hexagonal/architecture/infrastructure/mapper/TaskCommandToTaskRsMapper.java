@@ -18,6 +18,4 @@ public interface TaskCommandToTaskRsMapper extends GenericMapper<Task, TaskRespo
     @Override
     @Mapping(target = "id", source = "taskId", qualifiedByName = "mapToId")
     TaskResponse toEntity(Task dto);
-
-
 }

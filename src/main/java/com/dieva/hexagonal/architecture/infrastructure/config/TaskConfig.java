@@ -1,6 +1,7 @@
 package com.dieva.hexagonal.architecture.infrastructure.config;
 
 import com.dieva.hexagonal.architecture.application.usecase.task.create.CreateTaskUseCase;
+import com.dieva.hexagonal.architecture.application.usecase.task.find.FindTaskUseCase;
 import com.dieva.hexagonal.architecture.domain.repository.port.TaskRepository;
 import com.dieva.hexagonal.architecture.infrastructure.mapper.TaskMapper;
 import com.dieva.hexagonal.architecture.infrastructure.repository.TaskEntityRepositoryJpa;
@@ -25,4 +26,10 @@ public class TaskConfig {
     public CreateTaskUseCase createTaskUseCase() {
         return new CreateTaskUseCase(taskRepository());
     }
+
+    @Bean
+    public FindTaskUseCase findTaskUseCase() {
+        return new FindTaskUseCase(taskRepository());
+    }
+
 }
