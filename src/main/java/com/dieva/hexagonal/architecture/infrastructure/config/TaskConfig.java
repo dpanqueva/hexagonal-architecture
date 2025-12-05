@@ -1,6 +1,7 @@
 package com.dieva.hexagonal.architecture.infrastructure.config;
 
 import com.dieva.hexagonal.architecture.application.usecase.task.create.CreateTaskUseCase;
+import com.dieva.hexagonal.architecture.application.usecase.task.delete.DeleteTaskUseCase;
 import com.dieva.hexagonal.architecture.application.usecase.task.edit.CompleteTaskUseCase;
 import com.dieva.hexagonal.architecture.application.usecase.task.edit.EditTaskUseCase;
 import com.dieva.hexagonal.architecture.application.usecase.task.find.FindTaskUseCase;
@@ -42,5 +43,10 @@ public class TaskConfig {
     @Bean
     public EditTaskUseCase editTaskUseCase(){
         return new EditTaskUseCase(taskRepository());
+    }
+
+    @Bean
+    public DeleteTaskUseCase deleteTaskUseCase(){
+        return new DeleteTaskUseCase(taskRepository());
     }
 }
