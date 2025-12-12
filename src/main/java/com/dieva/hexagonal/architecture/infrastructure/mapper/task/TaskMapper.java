@@ -1,8 +1,9 @@
-package com.dieva.hexagonal.architecture.infrastructure.mapper;
+package com.dieva.hexagonal.architecture.infrastructure.mapper.task;
 
 import com.dieva.hexagonal.architecture.domain.model.Task;
 import com.dieva.hexagonal.architecture.domain.model.TaskId;
 import com.dieva.hexagonal.architecture.infrastructure.entity.TaskEntity;
+import com.dieva.hexagonal.architecture.infrastructure.mapper.GenericMapper;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Named;

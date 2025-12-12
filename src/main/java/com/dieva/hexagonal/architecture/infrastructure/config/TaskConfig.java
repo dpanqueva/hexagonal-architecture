@@ -6,7 +6,7 @@ import com.dieva.hexagonal.architecture.application.usecase.task.edit.CompleteTa
 import com.dieva.hexagonal.architecture.application.usecase.task.edit.EditTaskUseCase;
 import com.dieva.hexagonal.architecture.application.usecase.task.find.FindTaskUseCase;
 import com.dieva.hexagonal.architecture.domain.repository.port.TaskRepository;
-import com.dieva.hexagonal.architecture.infrastructure.mapper.TaskMapper;
+import com.dieva.hexagonal.architecture.infrastructure.mapper.task.TaskMapper;
 import com.dieva.hexagonal.architecture.infrastructure.repository.TaskEntityRepositoryJpa;
 import com.dieva.hexagonal.architecture.infrastructure.repository.adapter.TaskRepositoryImpl;
 import lombok.RequiredArgsConstructor;

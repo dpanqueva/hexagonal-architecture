@@ -4,7 +4,7 @@ import com.dieva.hexagonal.architecture.domain.model.Task;
 import com.dieva.hexagonal.architecture.domain.model.TaskId;
 import com.dieva.hexagonal.architecture.domain.repository.port.TaskRepository;
 import com.dieva.hexagonal.architecture.infrastructure.entity.TaskEntity;
-import com.dieva.hexagonal.architecture.infrastructure.mapper.TaskMapper;
+import com.dieva.hexagonal.architecture.infrastructure.mapper.task.TaskMapper;
 import com.dieva.hexagonal.architecture.infrastructure.repository.TaskEntityRepositoryJpa;
 import lombok.RequiredArgsConstructor;
 

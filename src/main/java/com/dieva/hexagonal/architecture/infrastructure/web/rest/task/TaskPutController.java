@@ -4,10 +4,10 @@ import com.dieva.hexagonal.architecture.application.usecase.task.edit.CompleteTa
 import com.dieva.hexagonal.architecture.application.usecase.task.edit.EditTaskUseCase;
 import com.dieva.hexagonal.architecture.domain.model.Task;
 import com.dieva.hexagonal.architecture.domain.model.TaskId;
-import com.dieva.hexagonal.architecture.infrastructure.mapper.TaskCommandToTaskRsMapper;
-import com.dieva.hexagonal.architecture.infrastructure.mapper.TaskRqEditToCommandMapper;
-import com.dieva.hexagonal.architecture.infrastructure.web.dto.TaskEditRequest;
-import com.dieva.hexagonal.architecture.infrastructure.web.dto.TaskResponse;
+import com.dieva.hexagonal.architecture.infrastructure.mapper.task.TaskCommandToTaskRsMapper;
+import com.dieva.hexagonal.architecture.infrastructure.mapper.task.TaskRqEditToCommandMapper;
+import com.dieva.hexagonal.architecture.infrastructure.web.dto.task.TaskEditRequest;
+import com.dieva.hexagonal.architecture.infrastructure.web.dto.task.TaskResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

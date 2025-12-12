@@ -4,7 +4,7 @@ import com.dieva.hexagonal.architecture.domain.model.User;
 import com.dieva.hexagonal.architecture.domain.model.UserId;
 import com.dieva.hexagonal.architecture.domain.repository.port.UserRepository;
 import com.dieva.hexagonal.architecture.infrastructure.entity.UserEntity;
-import com.dieva.hexagonal.architecture.infrastructure.mapper.UserMapper;
+import com.dieva.hexagonal.architecture.infrastructure.mapper.user.UserMapper;
 import com.dieva.hexagonal.architecture.infrastructure.repository.UserEntityRepositoryJpa;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -12,7 +12,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
-import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 @RequiredArgsConstructor
