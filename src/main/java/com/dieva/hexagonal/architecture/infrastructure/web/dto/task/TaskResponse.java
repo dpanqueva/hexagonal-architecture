@@ -1,4 +1,4 @@
-package com.dieva.hexagonal.architecture.infrastructure.web.dto;
+package com.dieva.hexagonal.architecture.infrastructure.web.dto.task;
 
 import java.time.LocalDateTime;
 

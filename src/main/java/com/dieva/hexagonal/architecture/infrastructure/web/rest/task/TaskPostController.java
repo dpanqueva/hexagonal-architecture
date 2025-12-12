@@ -2,10 +2,10 @@ package com.dieva.hexagonal.architecture.infrastructure.web.rest.task;
 
 import com.dieva.hexagonal.architecture.application.usecase.task.create.CreateTaskCommand;
 import com.dieva.hexagonal.architecture.application.usecase.task.create.CreateTaskUseCase;
-import com.dieva.hexagonal.architecture.infrastructure.mapper.TaskCommandToTaskRsMapper;
-import com.dieva.hexagonal.architecture.infrastructure.mapper.TaskRqToCommandMapper;
-import com.dieva.hexagonal.architecture.infrastructure.web.dto.TaskRequest;
-import com.dieva.hexagonal.architecture.infrastructure.web.dto.TaskResponse;
+import com.dieva.hexagonal.architecture.infrastructure.mapper.task.TaskCommandToTaskRsMapper;
+import com.dieva.hexagonal.architecture.infrastructure.mapper.task.TaskRqToCommandMapper;
+import com.dieva.hexagonal.architecture.infrastructure.web.dto.task.TaskRequest;
+import com.dieva.hexagonal.architecture.infrastructure.web.dto.task.TaskResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
