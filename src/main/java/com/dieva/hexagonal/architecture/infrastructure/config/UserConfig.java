@@ -1,6 +1,8 @@
 package com.dieva.hexagonal.architecture.infrastructure.config;
 
 import com.dieva.hexagonal.architecture.application.usecase.user.create.CreateUserUseCase;
+import com.dieva.hexagonal.architecture.application.usecase.user.edit.ChangePasswordUserUseCase;
+import com.dieva.hexagonal.architecture.application.usecase.user.edit.EditUserUseCase;
 import com.dieva.hexagonal.architecture.application.usecase.user.find.FindUserUseCase;
 import com.dieva.hexagonal.architecture.domain.repository.port.UserRepository;
 import com.dieva.hexagonal.architecture.infrastructure.mapper.user.UserMapper;
@@ -32,5 +34,15 @@ public class UserConfig {
     @Bean
     public FindUserUseCase findUserUseCase(){
         return new FindUserUseCase(userRepositoryJpa());
+    }
+
+    @Bean
+    public EditUserUseCase editUserUseCase(){
+        return new EditUserUseCase(userRepositoryJpa());
+    }
+
+    @Bean
+    public ChangePasswordUserUseCase changePasswordUserUseCase(){
+        return new ChangePasswordUserUseCase(userRepositoryJpa());
     }
 }
